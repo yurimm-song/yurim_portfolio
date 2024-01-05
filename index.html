@@ -342,9 +342,41 @@
         </ul>
       </section>
       <!-- Arrow up -->
-      <aside></aside>
+      <aside>
+        <a href="#home" title="back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
     </main>
     <!-- Footer -->
-    <footer id="contact"></footer>
+    <footer id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit impedit
+        similique adipisci enim corrupti. Ex officiis adipisci iusto ducimus
+        aliquid quod sequi nulla rerum reiciendis. Provident corporis maiores
+        amet! Provident?
+      </p>
+      <div>
+        <form action="/contact_page.php">
+          <li>
+            <input type="text" id="fullname" required placeholder="Name" />
+          </li>
+          <li>
+            <input type="email" id="email" required placeholder="Email" />
+            <input type="text" id="subject" required placeholder="Subject" />
+          </li>
+          <li>
+            <input
+              type="text"
+              id="message"
+              required
+              placeholder="Your Message"
+            />
+          </li>
+        </form>
+      </div>
+      <a href="#">Send Message</a>
+    </footer>
   </body>
 </html>
