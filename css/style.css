@@ -76,7 +76,7 @@ button:focus {
 
 .header__logo__title {
   font-size: 1.8rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .header__menu {
@@ -86,7 +86,7 @@ button:focus {
 
 .header__menu__item {
   padding: 8px 16px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .header__menu__item:hover {
@@ -96,4 +96,59 @@ button:focus {
 .header__menu__item.active {
   border: 1px solid var(--color-accent);
   border-radius: 4px;
+}
+
+/* Home */
+#home {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  background-color: var(--color-primary-variant);
+  color: var(--color-primary);
+  padding: 0rem 10rem;
+  padding-top: 7rem;
+  text-align: center;
+}
+
+.home__description {
+  padding: 5rem 0rem;
+}
+
+.home__description__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.home__description__description {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.home__description__buttons {
+  font-weight: 500;
+  text-align: left;
+  font-size: 0.85rem;
+  display: flex;
+  gap: 20px;
+}
+.home__description__buttons__button {
+  display: inline;
+  gap: 8px;
+  background-color: var(--color-primary-variant);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  margin: 0rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 15px;
+}
+.home__description__buttons__button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+}
+.home__avatar {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
 }
