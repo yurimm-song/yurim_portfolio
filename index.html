@@ -138,68 +138,77 @@
       </section>
       <!-- Skills -->
       <section id="skills">
-        <h2>My Skills</h2>
-        <p>
+        <h2 class="skills__title">
+          My <strong class="skills__title--strong">Skills</strong>
+        </h2>
+        <p class="skills__description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
           quod suscipit eius alias velit, voluptatum, ratione culpa fugit ex
           expedita molestias facere neque maxime aliquid voluptatem vel fuga
           sequi quis.
         </p>
-        <ul>
-          <li>
-            <i class="fa-solid fa-code"></i>
-            <p>Languages</p>
-            <p>JavaScript, Python, Java, C, Racket</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-server"></i>
-            <p>Technologies & Frameworks</p>
-            <p>
-              Git, React, REST, Netlify, Jest, Postman, CSS, HTML, Tailwind CSS,
-              Visual Studio Code
-            </p>
-          </li>
-          <li>
-            <i class="fa-solid fa-user-group"></i>
-            <p>Communication</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae saepe sed provident possimus quia veritatis soluta.
-              Error nam delectus temporibus sed ducimus libero cupiditate quam
-              tempora aliquam, natus, porro maiores!
-            </p>
-          </li>
-          <li>
-            <i class="fa-solid fa-people-group"></i>
-            <p>Teamwork</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo
-              maxime explicabo iusto reiciendis repellendus animi fuga aut?
-              Voluptatum qui dolor modi consequatur fuga perferendis, culpa
-              facilis repudiandae illo possimus?
-            </p>
-          </li>
-          <li>
-            <i class="fa-solid fa-question"></i>
-            <p>Problem-solving</p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              maxime nam nostrum sunt accusamus dicta ea molestiae quod
-              assumenda quis dolor officiis, dolorem culpa libero? Nemo
-              voluptatum eos fuga id?
-            </p>
-          </li>
-          <li>
-            <i class="fa-brands fa-html5"></i>
-            <p>Web Design</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-              cumque delectus. Expedita, blanditiis! Quidem, vero voluptate
-              necessitatibus assumenda consequatur ratione expedita praesentium
-              molestiae alias, beatae sunt numquam autem odio nemo?
-            </p>
-          </li>
-        </ul>
+        <div class="skills__items">
+          <ul class="skills__items__first">
+            <li class="skills__items__first__item">
+              <i class="fa-solid fa-code skills__icon"></i>
+              <p class="skills__items__first__item__title">Languages</p>
+              <p>JavaScript, Python, Java, C, Racket</p>
+            </li>
+            <li class="skills__items__first__item">
+              <i class="fa-solid fa-server skills__icon"></i>
+              <p class="skills__items__first__item__title">
+                Technologies & Frameworks
+              </p>
+              <p>
+                Git, React, REST, Netlify, Jest, Postman, CSS, HTML, Tailwind
+                CSS, Visual Studio Code
+              </p>
+            </li>
+            <li class="skills__items__first__item">
+              <i class="fa-solid fa-user-group skills__icon"></i>
+              <p class="skills__items__first__item__title">Communication</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae saepe sed provident possimus quia veritatis soluta.
+                Error nam delectus temporibus sed ducimus libero cupiditate quam
+                tempora aliquam, natus, porro maiores!
+              </p>
+            </li>
+          </ul>
+          <ul class="skills__items__second">
+            <li class="skills__items__second__item">
+              <i class="fa-solid fa-people-group skills__icon"></i>
+              <p class="skills__items__first__item__title">Teamwork</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
+                nemo maxime explicabo iusto reiciendis repellendus animi fuga
+                aut? Voluptatum qui dolor modi consequatur fuga perferendis,
+                culpa facilis repudiandae illo possimus?
+              </p>
+            </li>
+            <li class="skills__items__second__item">
+              <i class="fa-solid fa-question skills__icon"></i>
+              <p class="skills__items__first__item__title">Problem-solving</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat maxime nam nostrum sunt accusamus dicta ea molestiae
+                quod assumenda quis dolor officiis, dolorem culpa libero? Nemo
+                voluptatum eos fuga id?
+              </p>
+            </li>
+            <li class="skills__items__second__item">
+              <i class="fa-brands fa-html5 skills__icon"></i>
+              <p class="skills__items__first__item__title">Web Design</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                cumque delectus. Expedita, blanditiis! Quidem, vero voluptate
+                necessitatibus assumenda consequatur ratione expedita
+                praesentium molestiae alias, beatae sunt numquam autem odio
+                nemo?
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Hire me -->
       <section>
@@ -233,7 +242,7 @@
         <ul>
           <li>
             <a href="#" target="_blank">
-              <img src="images/projects/project1.webp" alt="project1" />
+              <img src="images/projects/project1.png" alt="project1" />
               <div>
                 <h3>Project #1</h3>
                 <p>Clone Coding with HTML, CSS</p>
@@ -242,7 +251,7 @@
           </li>
           <li>
             <a href="#" target="_blank">
-              <img src="images/projects/project2.webp" alt="project2" />
+              <img src="images/projects/project2.png" alt="project2" />
               <div>
                 <h3>Project #2</h3>
                 <p>Clone Coding with HTML, CSS</p>
@@ -251,7 +260,7 @@
           </li>
           <li>
             <a href="#" target="_blank">
-              <img src="images/projects/project3.webp" alt="project3" />
+              <img src="images/projects/project3.png" alt="project3" />
               <div>
                 <h3>Project #3</h3>
                 <p>Clone Coding with HTML, CSS</p>
@@ -260,7 +269,7 @@
           </li>
           <li>
             <a href="#" target="_blank">
-              <img src="images/projects/project4.webp" alt="project4" />
+              <img src="images/projects/project4.png" alt="project4" />
               <div>
                 <h3>Project #4</h3>
                 <p>Clone Coding with HTML, CSS</p>
