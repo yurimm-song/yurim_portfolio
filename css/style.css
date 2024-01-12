@@ -491,6 +491,82 @@ button:focus {
   font-weight: 400;
 }
 
+/* Resume */
+#resume {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-align: center;
+  padding: 7rem 10rem;
+}
+
+.resume__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.resume__items__item {
+  display: flex;
+}
+
+.resume__items__item__box {
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-accent);
+  position: relative;
+  font-size: 2rem;
+  margin: 0rem 0rem;
+  color: var(--color-primary);
+  height: 3rem;
+  padding: 0rem 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.resume__items__item__icon {
+  font-size: 1.5rem;
+  transition: all 300ms ease;
+}
+
+.resume__items__item__box:hover .resume__items__item__icon {
+  transform: rotate(-15deg) scale(1.2);
+}
+
+.resume__items__item__info:hover .resume__items__item__icon {
+  transform: rotate(-15deg) scale(1.2);
+}
+
+.resume__items__item__icon {
+  transition: all 300ms ease;
+}
+
+.resume__items__item__info {
+  border: 1px solid var(--color-text);
+  position: relative;
+  display: flexbox;
+  overflow: hidden;
+  text-align: left;
+  padding: 1rem 1rem;
+}
+
+.resume__title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.resume__years {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  margin-bottom: 0.8rem;
+}
+
+.resume__description {
+  font-weight: 500;
+  font-size: 0.9;
+}
+
 /* Contact */
 #contact-me {
   background-color: var(--color-primary);
@@ -498,6 +574,7 @@ button:focus {
   text-align: center;
   padding: 7rem 10rem;
 }
+
 .contact-me__title {
   font-size: 2.4rem;
   font-weight: 600;
