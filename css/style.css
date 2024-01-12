@@ -51,6 +51,12 @@ button:focus {
   outline: 1px solid var(--color-accent);
 }
 
+/* Common */
+.section {
+  padding: 4rem;
+  text-align: center;
+}
+
 /* Header */
 .header {
   background-color: var(--color-primary);
@@ -139,6 +145,7 @@ button:focus {
 
 .home__description__buttons__button {
   display: inline;
+  text-align: center;
   gap: 8px;
   background-color: var(--color-primary-variant);
   color: var(--color-primary);
@@ -241,7 +248,7 @@ button:focus {
   background-color: var(--color-primary);
   color: var(--color-text);
   text-align: center;
-  padding: 0rem 8rem;
+  padding: 0rem 7rem;
   padding-bottom: 5rem;
 }
 
@@ -346,9 +353,9 @@ button:focus {
 
 .hire_me__button {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -70%);
   background-color: transparent;
   color: var(--color-text);
   padding: 0.3rem 1rem;
@@ -370,7 +377,7 @@ button:focus {
   background-color: var(--color-primary);
   color: var(--color-text);
   text-align: center;
-  padding: 7rem 10rem;
+  padding: 5rem 10rem;
 }
 
 .portfolio__title {
@@ -496,7 +503,7 @@ button:focus {
   background-color: var(--color-primary);
   color: var(--color-text);
   text-align: center;
-  padding: 7rem 10rem;
+  padding: 5rem 10rem;
 }
 
 .resume__items {
@@ -564,7 +571,7 @@ button:focus {
 
 .resume__description {
   font-weight: 500;
-  font-size: 0.9;
+  font-size: 0.9rem;
 }
 
 /* Contact */
@@ -572,7 +579,7 @@ button:focus {
   background-color: var(--color-primary);
   color: var(--color-text);
   text-align: center;
-  padding: 7rem 10rem;
+  padding: 0rem 10rem;
 }
 
 .contact-me__title {
@@ -655,11 +662,11 @@ input[type="email"] {
 .arrow-up {
   background-color: var(--color-primary);
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 100%;
   text-align: center;
   box-shadow: 5px 5px 0px 0px var(--color-accent);
@@ -696,4 +703,335 @@ input[type="email"] {
 .contact__copyright {
   font-size: 0.85rem;
   font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  /* Common */
+  .section {
+    padding: 3rem 2rem;
+  }
+
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 4rem;
+    gap: 1rem;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  /* Home */
+  #home {
+    padding: 0rem 5rem;
+    padding-top: 3.5rem;
+  }
+
+  .home__description__title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .home__description__description {
+    font-size: 0.88rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .home__description__buttons {
+    font-size: 0.68rem;
+  }
+
+  .home__avatar {
+    width: 320px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* About */
+  #about {
+    padding: 3.5rem 5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about__avatar {
+    width: 280px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .about__description {
+    padding-left: 1.25rem;
+  }
+
+  .about__description__title {
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .about__description__description {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .about__description__specs {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .about__description__specs__subjects__subject {
+    margin-bottom: 0.75rem;
+  }
+
+  .about__description__specs__infos__info {
+    margin-bottom: 0.75rem;
+  }
+
+  .about__button {
+    font-size: 0.68rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* Skills */
+  #skills {
+    padding: 0rem 3.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .skills__title {
+    font-size: 1.92rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .skills__description {
+    font-size: 0.96rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills__items__first {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1.25rem 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills__items__first__item {
+    padding: 1rem 0.5rem;
+    max-width: 25rem;
+  }
+
+  .skills__items__first__item__title {
+    font-size: 1.04rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills__items__second {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills__items__second__item {
+    padding: 1rem 0.5rem;
+    max-width: 25rem;
+  }
+
+  .skills__items__second__item__title {
+    font-size: 0.96rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills__icon {
+    font-size: 1.5rem;
+    margin: 0.5rem 0rem;
+  }
+
+  /* Hire me */
+  .hire_me__phrase {
+    font-size: 1.36rem;
+  }
+
+  .hire_me__button {
+    font-size: 0.68rem;
+    padding: 0.15rem 0.8rem;
+  }
+
+  /* Portfolio */
+  #portfolio {
+    padding: 2.5rem 5rem;
+  }
+
+  .portfolio__title {
+    font-size: 1.92rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .portfolio__description {
+    font-size: 0.96rem;
+  }
+
+  .portfolio__categories {
+    margin: 1.25rem;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .portfolio__categories__category {
+    font-size: 0.72rem;
+    padding: 0.25rem 1.5rem;
+    width: 100%;
+  }
+
+  .count {
+    top: -8px;
+    right: 6.4px;
+    width: 22.4px;
+    height: 22.4px;
+    line-height: 22.4px;
+  }
+
+  .projects {
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project__title {
+    font-size: 0.8rem;
+  }
+
+  .project__title:after {
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0.25rem 0;
+    width: 40px;
+    height: 1.6px;
+  }
+
+  .project__description {
+    font-size: 0.64rem;
+  }
+
+  /* Resume */
+  #resume {
+    padding: 3.5rem 5rem;
+  }
+
+  .resume__items {
+    gap: 0.5rem;
+  }
+
+  .resume__items__item__box {
+    font-size: 1.6rem;
+    height: 2.4rem;
+    padding: 0rem 0.5rem;
+  }
+
+  .resume__items__item__icon {
+    font-size: 1.2rem;
+  }
+
+  .resume__items__item__info {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .resume__title {
+    font-size: 0.96rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .resume__years {
+    font-size: 0.72rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .resume__description {
+    font-size: 0.72rem;
+  }
+
+  /* Contact */
+  #contact-me {
+    padding: 3.5rem 5rem;
+  }
+
+  .contact-me__title {
+    font-size: 1.92rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .contact-me__descripiton {
+    font-size: 0.96rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-me__input {
+    margin-bottom: 1rem;
+  }
+
+  #fullname {
+    padding: 0.125rem 0.25rem;
+  }
+
+  .contact-me__input__first {
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-me__input__second {
+    margin-bottom: 0.25rem;
+  }
+
+  #email {
+    margin-right: 0.125rem;
+    padding: 0.125rem 0.25rem;
+  }
+
+  #subject {
+    margin-left: 0.125rem;
+    padding: 0.125rem 0.25rem;
+  }
+
+  #message {
+    padding: 0.125rem 0.25rem;
+  }
+
+  .contact-me__button {
+    font-size: 0.68rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* Arrow up */
+  .arrow-up {
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 0px 0px var(--color-accent);
+  }
+
+  /* Footer */
+  .contact__title {
+    font-size: 1.6rem;
+  }
+
+  .contact__links {
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.36rem;
+  }
+
+  .contact__copyright {
+    font-size: 0.68rem;
+  }
 }
