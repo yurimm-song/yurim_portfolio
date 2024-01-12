@@ -229,6 +229,12 @@ button:focus {
   border-radius: 15px;
 }
 
+.about__button:hover {
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
 /* Skills */
 #skills {
   justify-content: space-between;
@@ -483,6 +489,89 @@ button:focus {
 .project__description {
   font-size: 0.8rem;
   font-weight: 400;
+}
+
+/* Contact */
+#contact-me {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-align: center;
+  padding: 7rem 10rem;
+}
+.contact-me__title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.contact-me__title--strong {
+  color: var(--color-accent);
+}
+
+.contact-me__descripiton {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.contact-me__input {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+}
+
+#fullname {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+}
+
+.contact-me__input__first {
+  margin-bottom: 0.5rem;
+}
+
+.contact-me__input__second {
+  display: flex;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+#email {
+  width: 50%;
+  margin-right: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+#subject {
+  width: 50%;
+  margin-left: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+#message {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+}
+
+.contact-me__button {
+  font-weight: 500;
+  font-size: 0.85rem;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-text);
+  border-radius: 15px;
+}
+
+.contact-me__button:hover {
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 /* Arrow up */
