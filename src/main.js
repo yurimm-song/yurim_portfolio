@@ -25,3 +25,16 @@ document.addEventListener("scroll", () => {
     arrowUp.style.opacity = 0;
   }
 });
+
+// NavBar toggle button click
+const navbarMenu = document.querySelector(".header__menu");
+const navbarToggle = document.querySelector(".header__toggle");
+navbarToggle.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
+});
+
+// Close menu when clicking Navbar menu
+navbarMenu.addEventListener("click", () => {
+  navbarMenu.classList.remove("open");
+  
+});
