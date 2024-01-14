@@ -1,3 +1,5 @@
+'use strict';
+
 // Dark styling on header when scrolling down the page
 const header = document.querySelector(".header");
 const headerHeight = header.getBoundingClientRect().height;
@@ -36,5 +38,5 @@ navbarToggle.addEventListener("click", () => {
 // Close menu when clicking Navbar menu
 navbarMenu.addEventListener("click", () => {
   navbarMenu.classList.remove("open");
-  
+
 });
