@@ -1,17 +1,17 @@
 /* Global */
 :root {
   /* App Colors */
-  --color-primary: var(--color-brown);
-  --color-primary-variant: var(--color-grey);
-  --color-accent: var(--color-yellow);
-  --color-accent-variant: var(--color-pink);
+  --color-primary: var(--color-blue);
+  --color-primary-variant: var(--color-navy);
+  --color-accent: var(--color-orange);
+  --color-accent-variant: var(--color-red);
   --color-text: var(--color-white);
   /* Colors */
-  --color-brown: #333333;
+  --color-blue: #00364d;
   --color-white: #ffffff;
-  --color-grey: #bfc9ca;
-  --color-yellow: #ffff99;
-  --color-pink: #ff635e;
+  --color-navy: #1d293e;
+  --color-orange: #f2b366;
+  --color-red: #ff635e;
 }
 
 * {
@@ -131,8 +131,8 @@ button:focus {
   display: flex;
   justify-content: space-between;
   gap: 4px;
-  background-color: var(--color-primary-variant);
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-text);
   padding: 0rem 10rem;
   padding-top: 7rem;
   text-align: center;
@@ -147,6 +147,10 @@ button:focus {
   font-weight: 700;
   text-align: left;
   margin-bottom: 1rem;
+}
+
+.home__description__title--strong {
+  color: var(--color-accent);
 }
 
 .home__description__description {
@@ -168,17 +172,18 @@ button:focus {
   display: inline;
   text-align: center;
   gap: 8px;
-  background-color: var(--color-primary-variant);
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-text);
   padding: 0.5rem 1rem;
   margin: 0rem;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-text);
   border-radius: 15px;
 }
 
 .home__description__buttons__button:hover {
-  background-color: var(--color-primary);
-  color: var(--color-accent);
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  color: var(--color-primary);
 }
 
 .home__avatar {
@@ -191,7 +196,7 @@ button:focus {
 #about {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-variant);
   color: var(--color-text);
   padding: 7rem 10rem;
   text-align: center;
@@ -250,7 +255,7 @@ button:focus {
 .about__button {
   font-weight: 500;
   font-size: 0.85rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-variant);
   color: var(--color-text);
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-text);
@@ -260,13 +265,13 @@ button:focus {
 .about__button:hover {
   border: 1px solid var(--color-accent);
   background-color: var(--color-accent);
-  color: var(--color-primary);
+  color: var(--color-primary-variant);
 }
 
 /* Skills */
 #skills {
   justify-content: space-between;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-variant);
   color: var(--color-text);
   text-align: center;
   padding: 0rem 7rem;
@@ -354,7 +359,7 @@ button:focus {
   position: relative;
   text-align: center;
   color: var(--color-text);
-  background: var(--color-primary);
+  background: var(--color-primary-variant);
   white-space: nowrap;
 }
 
@@ -390,12 +395,12 @@ button:focus {
 .hire_me__button:hover {
   background-color: var(--color-accent);
   border: 1px solid var(--color-accent);
-  color: var(--color-primary);
+  color: var(--color-primary-variant);
 }
 
 /* Portfolio */
 #portfolio {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-variant);
   color: var(--color-text);
   text-align: center;
   padding: 5rem 10rem;
@@ -436,7 +441,7 @@ button:focus {
 
 .category--selected {
   background-color: var(--color-accent);
-  color: var(--color-primary);
+  color: var(--color-primary-variant);
 }
 
 .count {
@@ -528,7 +533,7 @@ button:focus {
 
 /* Resume */
 #resume {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-variant);
   color: var(--color-text);
   text-align: center;
   padding: 5rem 10rem;
@@ -551,7 +556,7 @@ button:focus {
   position: relative;
   font-size: 2rem;
   margin: 0rem 0rem;
-  color: var(--color-primary);
+  color: var(--color-primary-variant);
   height: 3rem;
   padding: 0rem 1rem;
   text-align: center;
@@ -614,7 +619,7 @@ button:focus {
 
 /* Contact */
 #contact-me {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-variant);
   color: var(--color-text);
   text-align: center;
   padding: 0rem 10rem;
@@ -643,7 +648,7 @@ button:focus {
 
 input[type="text"],
 input[type="email"] {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-variant);
   color: var(--color-text);
   border: 1px solid var(--color-text);
 }
@@ -683,7 +688,7 @@ input[type="email"] {
 .contact-me__button {
   font-weight: 500;
   font-size: 0.85rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-variant);
   color: var(--color-text);
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-text);
@@ -693,7 +698,7 @@ input[type="email"] {
 .contact-me__button:hover {
   border: 1px solid var(--color-accent);
   background-color: var(--color-accent);
-  color: var(--color-primary);
+  color: var(--color-primary-variant);
 }
 
 /* Arrow up */
@@ -713,7 +718,7 @@ input[type="email"] {
 
 /* Footer */
 #contact {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-variant);
   color: var(--color-text);
   text-align: center;
 }

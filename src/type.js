@@ -1,6 +1,6 @@
 "use strict";
 
-new TypeIt(".home__description__title", {
+new TypeIt(".home__description__title--strong", {
   loop: true,
   speed: 100,
 })
